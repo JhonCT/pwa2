@@ -55,10 +55,10 @@ self.addEventListener('fetch', e => {
       .then(res => {
         if (res) {
           //recuperar del cache
-          return res
+          return res;
         }
         //recuperar de la petición a la url
-        return fetch(e.request)
+        return fetch(e.request);
       })
   )
 })
